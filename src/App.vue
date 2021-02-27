@@ -46,18 +46,10 @@
               </a>
             </div>
             <nav class="hidden md:flex justify-end md:space-x-0 lg:space-x-6">
-              <a href="#" class="text-base font-medium px-3 py-1 rounded-lg hover:bg-gray-100 text-gray-500">
-                Feautures
-              </a>
-              <a href="#" class="text-base font-medium px-3 py-1 rounded-lg hover:bg-gray-100 text-gray-500">
-                Pricing
-              </a>
-              <a href="#" class="text-base font-medium px-3 py-1 rounded-lg hover:bg-gray-100 text-gray-500">
-                Docs
-              </a>
-              <a href="#" class="text-base font-medium px-3 py-1 rounded-lg hover:bg-gray-100 text-gray-500">
-                Company
-              </a>
+              <NavItem navItemTitle="Features" />
+              <NavItem navItemTitle="Pricing" />
+              <NavItem navItemTitle="Docs" />
+              <NavItem navItemTitle="Company" />
             </nav>
             <div class="flex items-center justify-end flex-1 lg:w-0 space-x-3">
               <a href="#" class="whitespace-nowrap text-base font-medium px-6 py-2 rounded text-secondary-500 hover:text-secondary-600 bg-gradient-to-t from-secondary-100 hover:from-secondary-200 hover:to-secondary-50 border border-secondary-500">
@@ -381,14 +373,14 @@
 </template>
 
 <script>
-// import index from './components/index.vue'
+  import NavItem from './components/NavItem.vue'
 
-// export default {
-//   name: 'App',
-//   components: {
-//     index
-//   }
-// }
+  export default {
+    name: 'App',
+    components: {
+      NavItem
+    }
+  }
 </script>
 
 <style src="./assets/dist.css"></style>
